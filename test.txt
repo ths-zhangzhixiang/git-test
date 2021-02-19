@@ -1,5 +1,3 @@
-
-
 git remote add origin https://github.com/ths-zhangzhixiang/git-test.git
 这时执行git remote那句话，就是先将本地仓库与远端仓库建立一个链接： git remote add ， 那么add什么呢？ 蓝色的方框其实就是你为远端仓库所起的名字，一般都是叫origin，其实你也可以要Ceres 或者Earth，绿色方框就是你的远端仓库的真实地址；
 
@@ -11,3 +9,11 @@ git branch -a 查看当前仓库下所有分支
 
 主分支修改如何同步到其他分支(主分支和其他分支内容不同，切换分支后本地仓库显示的文件也会不同)
 提交主分支文件，使缓存区无文件，git checkout <分支名>
+
+git推送步骤
+git init //初始化仓库
+git add .(文件name) //添加文件到本地仓库
+git commit -m “first commit” //添加文件描述信息
+git remote add origin + 远程仓库地址 //链接远程仓库，创建主分支
+git pull origin master // 把本地仓库的变化连接到远程仓库主分支
+git push -u origin master //把本地仓库的文件推送到远程仓库
